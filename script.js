@@ -1,8 +1,22 @@
+const container = document.querySelector('.container');
+
 // create 16x16 grid
-    // create divs using createElement.
-    // appendChild divs to '.container' div
-    // allow divs to be created with inline-block
-    // set borders and width for new grid divs
+function createGrid(size) {
+    
+    for(let row = 0; row < size; row++){
+        for(let column = 0; column < size; column++) {
+            // create divs using createElement.
+            let grid = document.createElement('div');
+            grid.classList.add('grid');
+            // set height and width for new grid divs
+            grid.style.width = 500/size + 'px';
+            grid.style.height = 500/size + 'px';
+            // appendChild divs to '.container' div
+            container.append(grid);
+        }
+        
+    }
+}
 
 // When mouse hovers over grid squres do the following
     // add event listners to divs for mouse hover
