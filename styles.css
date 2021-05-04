@@ -1,18 +1,61 @@
+/******************************************************************************* 
+************************ The Odin Project: Etch-a-Sketch ***********************
+********************************************************************************
+***********************          by Justin Bauer          **********************
+***********************          GitHub: jbNype           **********************
+***********************     http://justinbauer.design     **********************
+********************************************************************************/
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    display:flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 98vh;
+    background-color:#111;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+h1{
+    color: #fff;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    letter-spacing: 10px;
+}
 .container{
-    /* position:absolute; */
-    background-color: #fff;
-    width: 500px;
-    height: 500px;
-    outline: 2px solid black;
-    margin: 0;
-    padding: 0;
+    background-color: #111;
+    max-width: 600px;
+    max-height: 600px;
+    border-radius: 2px;
+    border: 2px solid #333;
     font-size: 0;
 }
 .grid{
     display:inline-block;
     margin: 0;
     padding: 0;
+    background-color: #111;
+    outline: 1px solid #333;
+}
+button{
+    font-size: 1.6em;
+    padding: 12px 24px;
+    color: #111;
+    background-color: #7fffd4;
+    margin-top:50px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    border-radius: 2px;
+    border: none;
+}
+button:hover{
     background-color: #fff;
-    outline: 1px solid black;
+    color: #111;
+    border: none;
+}
+button:focus{
+    outline: none;
 }
